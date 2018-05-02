@@ -13,6 +13,7 @@ class Bag:
         return len(self._bag)
 
     def __iter__(self):
+        self._cur_idx = -1
         return self
 
     def __next__(self):
