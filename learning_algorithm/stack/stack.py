@@ -9,6 +9,9 @@ class Stack:
     def pop(self):
         return self._stack.pop(0)
 
+    def get_top(self):
+        return self._stack[0]
+
     def is_empty(self) -> int:
         return len(self._stack) == 0
 

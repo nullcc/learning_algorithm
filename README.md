@@ -2,7 +2,7 @@
 
 ## Environment
 
-    Python 3.6.0
+    Python 3.6+
     
 ## Running Tests
 
