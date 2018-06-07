@@ -27,12 +27,16 @@ class BFSTest(unittest.TestCase):
         node_4 = Node('node_4')
         node_5 = Node('node_5')
         node_6 = Node('node_6')
+        node_7 = Node('node_7')
+        node_8 = Node('node_8')
 
         #          root
         #         /    \
         #        1      2
         #       / \    / \
         #      3   4  5   6
+        #     / \
+        #    7   8
 
         root.left = node_1
         root.right = node_2
@@ -40,6 +44,8 @@ class BFSTest(unittest.TestCase):
         node_1.right = node_4
         node_2.left = node_5
         node_2.right = node_6
+        node_3.left = node_7
+        node_3.right = node_8
 
         output = []
 
@@ -47,5 +53,5 @@ class BFSTest(unittest.TestCase):
             output.append(node.val)
 
         bfs(root, fn)
-        self.assertEqual(['root', 'node_1', 'node_2', 'node_3', 'node_4', 'node_5', 'node_6'],
+        self.assertEqual(['root', 'node_1', 'node_2', 'node_3', 'node_4', 'node_5', 'node_6', 'node_7', 'node_8'],
                          output)
